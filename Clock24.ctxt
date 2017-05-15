@@ -1,0 +1,41 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Clock24()
+comment0.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ Clock24\r\n\ \r\n\ Preconditions\:\ none\r\n\ Postconditions\:\ time\ is\ set\ to\ 12\:00\ midnight.\r\n
+comment1.params=hval
+comment1.target=Clock24(int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Clock24\r\n\ \r\n\ @param\ hval\ \ \ \ the\ desired\ hour.\r\n\ Postcondition\:\ a\ Clock24\ object\ is\ created\ with\ the\ given\ hour\ value\r\n\ and\ a\ default\ minute\ value\ of\ 0.\r\n
+comment10.params=
+comment10.target=java.lang.String\ toString()
+comment10.text=\r\n\ toString\:\ convert\ the\ time\ to\ String\ (hh\:mm)\r\n\ \r\n\ @return\ \ \ \ a\ String,\ representing\ the\ time\ in\ 24-hour\ format.\r\n
+comment11.params=fmt
+comment11.target=java.lang.String\ toString(boolean)
+comment11.text=\r\n\ toString\:\ convert\ the\ time\ to\ String\ (hh\:mm\ AM|PM,\ or\ hh\:mm)\ according\ to\ the\ desired\ format\ (12-hour\ or\ 24-hour)..\r\n\ \r\n\ @param\ fmt\ \ \ \ \ a\ boolean,\ true\ if\ 12-hour\ format\ is\ desired;\ false\ if\ 24-hour\ format\ is\ desired.\r\n\ @return\ \ \ \ \ \ \ \ a\ String,\ representing\ the\ time\ in\ the\ given\ format\ (12-hour\ or\ 24-hour).\r\n
+comment12.params=
+comment12.target=void\ test()
+comment12.text=\r\n\ Test\ method\ --\ every\ class\ should\ have\ one.\r\n
+comment2.params=hval\ mval
+comment2.target=Clock24(int,\ int)
+comment2.text=\r\n\ Constructor\ for\ objects\ of\ class\ Clock24\r\n\ \r\n\ @param\ hval\ \ \ \ the\ desired\ hour\ value\r\n\ @param\ mval\ \ \ \ the\ desired\ minute\ value\r\n\ Preconditions\:\ 0\ <\=\ hval\ <\=\ 23,\ 0\ <\=\ mval\ <\=\ 59\r\n\ Postcondition\:\ the\ Clock24\ object\ is\ created\ with\ the\ specified\ hour\ and\r\n\ minute\ values.\r\n
+comment3.params=val
+comment3.target=void\ setHour(int)
+comment3.text=\r\n\ setHour\:\ what\ it\ sounds\ like.\r\n\ \r\n\ @param\ val\ \ \ \ \ the\ desired\ new\ hour\ value\r\n\ Precondition\:\ \ val\ >\=\ 0\r\n\ Postcondition\:\ The\ new\ hour\ value\ is\ set\ \r\n\ (using\ modulo\ to\ ensure\ maintenance\ of\ 24-hour\ format).\r\n
+comment4.params=val
+comment4.target=void\ setMinute(int)
+comment4.text=\r\n\ setMinute\:\ what\ it\ sounds\ like.\r\n\ \r\n\ @param\ val\ \ \ \ \ the\ desired\ minute\ value\r\n\ Precondition\:\ \ 0\ <\=\ val\ <\=\ 59\r\n\ Postcondition\:\ The\ new\ minute\ value\ is\ set.\r\n
+comment5.params=hval\ mval
+comment5.target=void\ setTime(int,\ int)
+comment5.text=\r\n\ setTime\:\ set\ the\ time\ by\ setting\ the\ hour\ and\ minute.\r\n\ \r\n\ @param\ hval\ \ \ \ the\ desired\ new\ hour\r\n\ @param\ mval\ \ \ \ the\ desired\ new\ minute\r\n\ Postcondition\:\ The\ new\ hour\ and\ minute\ values\ are\ set.\r\n
+comment6.params=
+comment6.target=int\ getHour()
+comment6.text=\r\n\ getHour\:\ what\ it\ sounds\ like.\r\n\ \r\n\ @return\ \ \ \ an\ int,\ the\ current\ hour\ value\ (in\ 24\ hour\ format).\r\n
+comment7.params=
+comment7.target=int\ getMinute()
+comment7.text=\r\n\ getMinute\:\ what\ it\ sounds\ like.\r\n\ \r\n\ @return\ \ \ \ an\ int,\ the\ current\ minute\ value\ (in\ 24\ hour\ format).\r\n
+comment8.params=hadd
+comment8.target=void\ addHours(int)
+comment8.text=\r\n\ addHours\:\ advance\ the\ hour\ by\ a\ given\ amount,\r\n\ \r\n\ @param\ hadd\ \ \ \ the\ desired\ number\ of\ hours\ to\ be\ added.\r\n\ Postcondition\:\ hour\ is\ updated\ to\ the\ new\ time\ \r\n\ (using\ modulo\ to\ ensure\ maintenance\ of\ 24-hour\ format).\r\n
+comment9.params=madd
+comment9.target=void\ addMinutes(int)
+comment9.text=\r\n\ addMinutes\:\ advance\ the\ minutes\ by\ a\ given\ amount.\r\n\ \r\n\ @param\ madd\ \ \ \ the\ desired\ number\ of\ minutes\ to\ add.\r\n\ Postcondition\:\ minute\ (and\ hour\ if\ necessary)\ is\ updated.\r\n
+numComments=13
